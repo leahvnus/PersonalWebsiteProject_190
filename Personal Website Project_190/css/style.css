@@ -1,0 +1,180 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.2em;
+  text-shadow: 0 0 0.2em rgb(255, 255, 255), 0 0 0.2em rgba(19, 17, 17, 0.24);
+  background-image: url('../picture/bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.header-menu > a {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  background: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+}
+
+.button > a {
+  color: black;
+}
+
+.active {
+  border-radius: 20px;
+  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  background-color: #9c27b0;
+  color: white;
+}
+
+.active > a {
+  color: white !important;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.button > a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+.card {
+  width: 800px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 25px 0;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  background: #fff;
+  border-radius: 6px;
+}
+
+.card-header {
+  color: #3C4858;
+  margin-top: 0;
+  margin-bottom: 3px;
+  padding-bottom: 15px;
+  text-decoration: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  text-indent: 50px;
+}
+
+.card-body > img {
+  margin-bottom: 12px;
+}
+
+.center {
+  align-self: center;
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-button {
+  border-radius: 20px;
+  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  background-color: #9c27b0;
+  color: white;
+  width: 120px;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+.slide-group {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/*disable button when attribute disable is in tag*/
+.slide-button[type="button"]:disabled {
+  background: gray;
+}
+
+.menu-toggle {
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  background-color: #9c27b0;
+  color: white;
+  width: 80px;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+
+/*Responsive screen */
+@media only screen and (max-width: 728px) {
+  /*hide all menu when screen is small*/
+    .header-menu{
+      display: none;
+    }
+}
+
+@media only screen and (min-width: 728px) {
+  /*hide toggle menu button when screen is large*/
+    .menu-toggle {
+      display: none;
+    }
+    .header-menu {
+      display: inherit;
+    }
+    /*menu always show when screen is large*/
+  .hide {
+    display: inherit !important;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inherit !important;
+}

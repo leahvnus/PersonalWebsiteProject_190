@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Show slide picture by using javascript-->
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <meta http-equiv="Cache-control" content="public">
+            <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+            <link rel="stylesheet" href="./css/style.css" type="text/css">
+            <title>Kitty Princess</title>
+        </head>
+        <body>
+
+            <header>
+                <h1 class="center">Kitty Princess</h1>
+                <button class="menu-toggle" onclick="menuToggle()">Menu</button>
+                <div class="header-menu" id="header-menu">
+                    <a href="index.html" class="button active">Home</a>
+                    <a href="breeds.html" class="button">About Cat</a>
+                    <a href="aboutme.html" class="button">About me</a>
+                </div>
+            </header>
+
+            <main>
+            <div class="card">
+                <div class="card-body">
+                        <p class="center" >Welcome to my website , This site is about cat I hope you enjoy it.</p>
+                    <div class="slide">
+                        <img src="./picture/cat2.jpg" id="slide" width="450" height="300">
+                    </div>
+                    <div class="slide-group">
+                        <button type="button" onclick="slidePrevious()" class="slide-button" id="btnPrevious">previous</button>
+                        <button type="button" onclick="slideNext()" class="slide-button" id="btnNext">next</button>
+                    </div>
+                    <hr>
+                    <a class="center" href="https://www.petcitiz.info/10-สายพันธุ์แมวที่คนไทยน/">credit : https://www.petcitiz.info/10-สายพันธุ์แมวที่คนไทยน/</a>
+                    
+                </div>
+            </div>
+            </main>
+
+            <script src="./javascript/javascript.js"></script>
+
+        </body>
+</html>
